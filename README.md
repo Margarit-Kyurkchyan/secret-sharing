@@ -25,12 +25,22 @@ git clone https://github.com/Margarit-Kyurkchyan/secret-sharing.git
 cd secret-sharing-django
 ```
 
-3. Apply migrations:
+3. Create database:
+```mysql
+CREATE DATABASE secret_sharing CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
+5. Install dependencies:
+```bash
+pip install mysqlclient
+```
+
+5. Apply migrations:
 ```bash
 python manage.py migrate
 ```
 
-4. Start development server:
+6. Start development server:
 ```bash
 python manage.py runserver
 ```
